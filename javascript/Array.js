@@ -1,3 +1,5 @@
+var colorchecker = true
+
 //this first array would go to all td tags that have the id of a 
 var verticalrow1=[x]
 //this goes to the b id's and etc.
@@ -18,8 +20,15 @@ var verticalrow5=[x]
 var verticalrow6=[x]
 var verticalrow7=[x]
 var start = 1
-var cellcolor
-c4[0]=""
-c4[1]=""
+abutton(){
+     if(colorchecker == true){}
+     else if(colorchecker == false){}
+}
+bbutton(){}
+cbutton(){}
+dbutton(){}
+ebutton(){}
+fbutton(){}
+gbutton(){}
 
 //create a functio that checks wheter the it has benn clicked before 
