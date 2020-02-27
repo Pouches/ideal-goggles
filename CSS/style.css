@@ -28,16 +28,18 @@ body{
 }
 
 .gameboard{
-    background-color:white;
-    width:70%;
-    height:70%;
-    left:20%;
+    background-color :rgb(21, 255, 0);
+    width:55%;
+    height:60%;
+    left:21%;
     position:absolute;
-    top:30%;
+    top:40%;
+    z-index: 3;
 }
 .gamecell{
     background-color:#2b2b2b;
-    border: #2b2b2b solid 2px;
-    border:250%;
+    /*border: #2b2b2b solid 2px;*/
+    border-radius:60%;
+    z-index: 2;
     
 }
