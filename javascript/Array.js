@@ -1,4 +1,4 @@
-var colorchecker = true
+var colorchecker = true;
 
 //this first array would go to all td tags that have the id of a 
 /*var verticalrow1=[x]
@@ -20,7 +20,7 @@ var verticalrow5=[x]{}
 var verticalrow6=[x]{}
 var verticalrow7=[x]{}*/
 var start = 1
-abutton(x){
+function abutton(x){
      if(colorchecker == true){
           for(x=0;x<=6;x++){
                if(x==1){document.getElementById(a1).style.backgroundColor="cyan"
@@ -29,11 +29,13 @@ abutton(x){
      }
      else if(colorchecker == false){}
 }
+/*
 bbutton(){}
 cbutton(){}
 dbutton(){}
 ebutton(){}
 fbutton(){}
 gbutton(){}
+*/
 
 //create a functio that checks wheter the it has benn clicked before 
