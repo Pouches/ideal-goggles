@@ -43,3 +43,27 @@ body{
     z-index: 2;
     
 }
+.startbutton{
+    background-color:rgb(21,255,0);
+    width:20%;
+    height:10%;
+    left:38%;
+    top:25%;
+    position:absolute;
+    color:black;
+    font-size:3em;
+}
+.startbutton:hover{
+    background-color:black;
+    color:rgb(21,255,0);
+}
+
+.playerindicator{
+    border:white solid 4px;
+    width:20%;
+    height:7%;
+    font-size:1.5em;
+    top:25%;
+    position:absolute;
+    color:white;
+}
