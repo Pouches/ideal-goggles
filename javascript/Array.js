@@ -23,7 +23,8 @@ var start = 1
 abutton(x){
      if(colorchecker == true){
           for(x=0;x<=6;x++){
-               if(x==1){document.getElementById(a1)}
+               if(x==1){document.getElementById(a1).style.backgroundColor="cyan"
+               }
           }
      }
      else if(colorchecker == false){}
