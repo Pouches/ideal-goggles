@@ -1,11 +1,11 @@
 var colorchecker = true;
-     var countercolumnone = 0
-     var countercolumntwo = 0
-     var countercolumnthree = 0 
-     var countercolumnfour = 0 
-     var countercolumnfive = 0 
-     var countercolumnsix = 0 
-     var countercolumnseven = 0
+     var countercolumnone = 0 ;
+     var countercolumntwo = 0 ;
+     var countercolumnthree = 0 ;
+     var countercolumnfour = 0 ;
+     var countercolumnfive = 0 ;
+     var countercolumnsix = 0 ;
+     var countercolumnseven = 0 ;
 var tie = 0 
 
 //the variables that end in s mean that they are magenta
@@ -37,13 +37,18 @@ var verticalrow7=[x]{}*/
 
 //this just states who's turn it is !(not working)!
 if(colorchecker==true){
-     document.getElementById("turn").nodeValue=("Cyan's turn");
+     document.getElementById("turn").value=("Cyan's turn");
 }
 else if(colorchecker==false){
      document.getElementById("turn").innerHTML=("Magenta's turn");
 }
 //not sure what this was supposed to do
 //var start = 1
+function gamex(x)
+{
+     var currentID = x.id;
+     console.log(currentID);
+}
 function abutton(){
 
      //the s at the end of a variable means it is magenta while the first letter indicates the row with  A being the first column and B being the second ETC.
@@ -54,15 +59,16 @@ function abutton(){
      var afourth = document.getElementById("a3").style.backgroundColor="cyan";
      var afith = document.getElementById("a2").style.backgroundColor="cyan";
      var asixth = document.getElementById("a1").style.backgroundColor="cyan";
-
+/*
      var afirsts = document.getElementById("a6").style.backgroundColor="magenta";
      var aseconds = document.getElementById("a5").style.backgroundColor="magenta";
      var athirds = document.getElementById("a4").style.backgroundColor="magenta";
      var afourths = document.getElementById("a3").style.backgroundColor="magenta";
      var afiths = document.getElementById("a2").style.backgroundColor="magenta";
      var asixths = document.getElementById("a1").style.backgroundColor="magenta";
+     */
 //B
-     var bfirst = document.getElementById("b6").style.backgroundColor="cyan";
+/*   var bfirst = document.getElementById("b6").style.backgroundColor="cyan";
      var bsecond = document.getElementById("b5").style.backgroundColor="cyan";
      var bthird = document.getElementById("b4").style.backgroundColor="cyan";
      var bfourth = document.getElementById("b3").style.backgroundColor="cyan";
@@ -145,9 +151,9 @@ function abutton(){
      var fthird = document.getElementById("g4").style.backgroundColor="magenta";
      var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
      var ffith = document.getElementById("g2").style.backgroundColor="magenta";
-     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";
+     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
-          for(countercolumnone=0;countercolumnone<=6;countercolumnone++){
+          for(countercolumnone=1;countercolumnone<=6;countercolumnone++){
                if(countercolumnone==1){
                     var afirst //= document.getElementById("a1").style.backgroundColor="blue";
                }
@@ -172,7 +178,7 @@ function abutton(){
           }
      }
      else if(colorchecker == false){
-          for(countercolumnone=0;countercolumnone<=6;countercolumnone){
+          for(countercolumnone=1;countercolumnone<=6;countercolumnone++){
                if(countercolumnone==1){
                     var afirsts
                }
@@ -286,7 +292,7 @@ function bbutton(){
 
 
 
-function bbutton(){
+function cbutton(){
      var cfirst = document.getElementById("c6").style.backgroundColor="cyan";
      var csecond = document.getElementById("c5").style.backgroundColor="cyan";
      var cthird = document.getElementById("c4").style.backgroundColor="cyan";
@@ -362,7 +368,7 @@ function bbutton(){
 
 
 
-function bbutton(){
+function dbutton(){
      var dfirst = document.getElementById("d6").style.backgroundColor="cyan";
      var dsecond = document.getElementById("d5").style.backgroundColor="cyan";
      var dthird = document.getElementById("d4").style.backgroundColor="cyan";
@@ -444,7 +450,7 @@ function bbutton(){
 
 
 
-function bbutton(){
+function ebutton(){
      var efirst = document.getElementById("e6").style.backgroundColor="cyan";
      var esecond = document.getElementById("e5").style.backgroundColor="cyan";
      var ethird = document.getElementById("e4").style.backgroundColor="cyan";
@@ -523,7 +529,7 @@ function bbutton(){
 
 
 
-function bbutton(){
+function fbutton(){
      var ffirst = document.getElementById("f6").style.backgroundColor="cyan";
      var fsecond = document.getElementById("f5").style.backgroundColor="cyan";
      var fthird = document.getElementById("f4").style.backgroundColor="cyan";
@@ -600,7 +606,7 @@ function bbutton(){
 
 
 
-function bbutton(){
+function gbutton(){
      var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
      var gsecond = document.getElementById("g5").style.backgroundColor="cyan";
      var gthird = document.getElementById("g4").style.backgroundColor="cyan";
