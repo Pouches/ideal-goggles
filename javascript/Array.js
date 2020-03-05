@@ -7,7 +7,41 @@ var colorchecker = true;
      var countercolumnsix = 0 ;
      var countercolumnseven = 0 ;
 var tie = 0 
+var currentID
+//A
+ 
 
+
+     
+//B
+
+
+
+//C
+
+
+//D
+
+
+
+//E
+
+
+
+//f
+
+
+
+
+//g
+
+     
+   /*  var ffirst = document.getElementById("g6").style.backgroundColor="magenta";
+     var fsecond = document.getElementById("g5").style.backgroundColor="magenta";
+     var fthird = document.getElementById("g4").style.backgroundColor="magenta";
+     var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
+     var ffith = document.getElementById("g2").style.backgroundColor="magenta";
+     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";*/
 //the variables that end in s mean that they are magenta
 
 
@@ -37,7 +71,7 @@ var verticalrow7=[x]{}*/
 
 //this just states who's turn it is !(not working)!
 if(colorchecker==true){
-     document.getElementById("turn").value=("Cyan's turn");
+   //  document.getElementById("turn").innerHTML=("Cyan's turn");
 }
 else if(colorchecker==false){
      document.getElementById("turn").innerHTML=("Magenta's turn");
@@ -49,138 +83,63 @@ function gamex(x)
      var currentID = x.id;
      console.log(currentID);
 }
+function clicker(x){
+     if(colorchecker==true){
+          currentID.style.backgroundColor="cyan"
+          colorchecker=false
+     }
+     else if(colorchecker==false){
+         document.getElementById(currentID).style.backgroundColor="magenta"
+     }
+}
+
+
 function abutton(){
+//the countercolumnone is just the same as  abutton the onclick  
 
      //the s at the end of a variable means it is magenta while the first letter indicates the row with  A being the first column and B being the second ETC.
-//A
-     var afirst = document.getElementById("a6").style.backgroundColor="cyan";
-     var asecond = document.getElementById("a5").style.backgroundColor="cyan";
-     var athird = document.getElementById("a4").style.backgroundColor="cyan";
-     var afourth = document.getElementById("a3").style.backgroundColor="cyan";
-     var afith = document.getElementById("a2").style.backgroundColor="cyan";
-     var asixth = document.getElementById("a1").style.backgroundColor="cyan";
-/*
-     var afirsts = document.getElementById("a6").style.backgroundColor="magenta";
-     var aseconds = document.getElementById("a5").style.backgroundColor="magenta";
-     var athirds = document.getElementById("a4").style.backgroundColor="magenta";
-     var afourths = document.getElementById("a3").style.backgroundColor="magenta";
-     var afiths = document.getElementById("a2").style.backgroundColor="magenta";
-     var asixths = document.getElementById("a1").style.backgroundColor="magenta";
-     */
-//B
-/*   var bfirst = document.getElementById("b6").style.backgroundColor="cyan";
-     var bsecond = document.getElementById("b5").style.backgroundColor="cyan";
-     var bthird = document.getElementById("b4").style.backgroundColor="cyan";
-     var bfourth = document.getElementById("b3").style.backgroundColor="cyan";
-     var bfith = document.getElementById("b2").style.backgroundColor="cyan";
-     var bsixth = document.getElementById("b1").style.backgroundColor="cyan";
 
-     var bfirsts = document.getElementById("b6").style.backgroundColor="magenta";
-     var bseconds = document.getElementById("b5").style.backgroundColor="magenta";
-     var bthirds = document.getElementById("b4").style.backgroundColor="magenta";
-     var bfourths = document.getElementById("b3").style.backgroundColor="magenta";
-     var bfiths = document.getElementById("b2").style.backgroundColor="magenta";
-     var bsixths = document.getElementById("b1").style.backgroundColor="magenta";
-//C
-     var cfirst = document.getElementById("c6").style.backgroundColor="cyan";
-     var csecond = document.getElementById("c5").style.backgroundColor="cyan";
-     var cthird = document.getElementById("c4").style.backgroundColor="cyan";
-     var cfourth = document.getElementById("c3").style.backgroundColor="cyan";
-     var cfith = document.getElementById("c2").style.backgroundColor="cyan";
-     var csixth = document.getElementById("c1").style.backgroundColor="cyan";
-
-     var cfirsts = document.getElementById("c6").style.backgroundColor="magenta";
-     var cseconds = document.getElementById("c5").style.backgroundColor="magenta";
-     var cthirds = document.getElementById("c4").style.backgroundColor="magenta";
-     var cfourths = document.getElementById("c3").style.backgroundColor="magenta";
-     var cfiths = document.getElementById("c2").style.backgroundColor="magenta";
-     var csixths = document.getElementById("c1").style.backgroundColor="magenta";
-//D
-     var dfirst = document.getElementById("d6").style.backgroundColor="cyan";
-     var dsecond = document.getElementById("d5").style.backgroundColor="cyan";
-     var dthird = document.getElementById("d4").style.backgroundColor="cyan";
-     var dfourth = document.getElementById("d3").style.backgroundColor="cyan";
-     var dfith = document.getElementById("d2").style.backgroundColor="cyan";
-     var dsixth = document.getElementById("d1").style.backgroundColor="cyan";
-
-     var dfirsts = document.getElementById("d6").style.backgroundColor="magenta";
-     var dseconds = document.getElementById("d5").style.backgroundColor="magenta";
-     var dthirds = document.getElementById("d4").style.backgroundColor="magenta";
-     var dfourths = document.getElementById("d3").style.backgroundColor="magenta";
-     var dfiths = document.getElementById("d2").style.backgroundColor="magenta";
-     var dsixths = document.getElementById("d1").style.backgroundColor="magenta";
-//E
-     var efirst = document.getElementById("e6").style.backgroundColor="cyan";
-     var esecond = document.getElementById("e5").style.backgroundColor="cyan";
-     var ethird = document.getElementById("e4").style.backgroundColor="cyan";
-     var efourth = document.getElementById("e3").style.backgroundColor="cyan";
-     var efith = document.getElementById("e2").style.backgroundColor="cyan";
-     var esixth = document.getElementById("e1").style.backgroundColor="cyan";
-
-     var efirst = document.getElementById("e6").style.backgroundColor="magenta";
-     var esecond = document.getElementById("e5").style.backgroundColor="magenta";
-     var ethird = document.getElementById("e4").style.backgroundColor="magenta";
-     var efourth = document.getElementById("e3").style.backgroundColor="magenta";
-     var efith = document.getElementById("e2").style.backgroundColor="magneta";
-     var esixth = document.getElementById("e1").style.backgroundColor="magenta";
-//f
-     var ffirst = document.getElementById("f6").style.backgroundColor="cyan";
-     var fsecond = document.getElementById("f5").style.backgroundColor="cyan";
-     var fthird = document.getElementById("f4").style.backgroundColor="cyan";
-     var ffourth = document.getElementById("f3").style.backgroundColor="cyan";
-     var ffith = document.getElementById("f2").style.backgroundColor="cyan";
-     var fsixth = document.getElementById("f1").style.backgroundColor="cyan";
-
-     var ffirsts = document.getElementById("f6").style.backgroundColor="magenta";
-     var fseconds = document.getElementById("f5").style.backgroundColor="magenta";
-     var fthirds = document.getElementById("f4").style.backgroundColor="magenta";
-     var ffourths = document.getElementById("f3").style.backgroundColor="magenta";
-     var ffiths = document.getElementById("f2").style.backgroundColor="magenta";
-     var fsixths = document.getElementById("f1").style.backgroundColor="magenta";
-
-//g
-     var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
-     var gsecond = document.getElementById("g5").style.backgroundColor="cyan";
-     var gthird = document.getElementById("g4").style.backgroundColor="cyan";
-     var gfourth = document.getElementById("g3").style.backgroundColor="cyan";
-     var gfith = document.getElementById("g2").style.backgroundColor="cyan";
-     var gsixth = document.getElementById("g1").style.backgroundColor="cyan";
-     
-     var ffirst = document.getElementById("g6").style.backgroundColor="magenta";
-     var fsecond = document.getElementById("g5").style.backgroundColor="magenta";
-     var fthird = document.getElementById("g4").style.backgroundColor="magenta";
-     var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
-     var ffith = document.getElementById("g2").style.backgroundColor="magenta";
-     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";*/
-     if(colorchecker == true){
-          for(countercolumnone=1;countercolumnone<=6;countercolumnone++){
+     if(colorchecker == true){     
+          //for(countercolumnone=1;countercolumnone<=6;countercolumnone++){
                if(countercolumnone==1){
-                    var afirst //= document.getElementById("a1").style.backgroundColor="blue";
+                    var afirst = document.getElementById("a6").style.backgroundColor="cyan";
+                    console.log(countercolumnone);
                }
-               else if(countercolumnone==2){
-                    var asecond
+              else if(countercolumnone==2){
+                    var asecond = document.getElementById("a5").style.backgroundColor="cyan";
+                    console.log(countercolumnone)
                }
                else if(countercolumnone==3){
-                    var athird
+                    var athird = document.getElementById("a4").style.backgroundColor="cyan";
+                    console.log(countercolumnone)
                }
                else if(countercolumnone==4){
-                    var afourth
+                    var afourth = document.getElementById("a3").style.backgroundColor="cyan";
+                    console.log(countercolumnone)
                }
                else if(countercolumnone==5){
-                    var afith
+                    var afith = document.getElementById("a2").style.backgroundColor="cyan";
+                    console.log(countercolumnone)
                }
                else if(countercolumnone==6){
-                    var asixth
+                    var asixth = document.getElementById("a1").style.backgroundColor="cyan";
+                    console.log(countercolumnone)
                }
                else if(countercolumnone>=7){
                     alert("column 1 is full")
                }
-          }
+         // }
      }
      else if(colorchecker == false){
+
+          var aseconds = document.getElementById("a5").style.backgroundColor="magenta";
+          var athirds = document.getElementById("a4").style.backgroundColor="magenta";
+          var afourths = document.getElementById("a3").style.backgroundColor="magenta";
+          var afiths = document.getElementById("a2").style.backgroundColor="magenta";
+          var asixths = document.getElementById("a1").style.backgroundColor="magenta";
           for(countercolumnone=1;countercolumnone<=6;countercolumnone++){
                if(countercolumnone==1){
-                    var afirsts
+                    var afirsts = document.getElementById("a6").style.backgroundColor="magenta";
                }
                else if(countercolumnone==2){
                     var aseconds
@@ -202,6 +161,8 @@ function abutton(){
                }
           }
      }
+     colorchecker!=colorchecker  
+     countercolumnone+=1
 }
 
 
@@ -215,7 +176,7 @@ function abutton(){
 
 
 function bbutton(){
-     var bfirst = document.getElementById("b6").style.backgroundColor="cyan";
+     /*var bfirst = document.getElementById("b6").style.backgroundColor="cyan";
      var bsecond = document.getElementById("b5").style.backgroundColor="cyan";
      var bthird = document.getElementById("b4").style.backgroundColor="cyan";
      var bfourth = document.getElementById("b3").style.backgroundColor="cyan";
@@ -227,8 +188,14 @@ function bbutton(){
      var bthirds = document.getElementById("b4").style.backgroundColor="magenta";
      var bfourths = document.getElementById("b3").style.backgroundColor="magenta";
      var bfiths = document.getElementById("b2").style.backgroundColor="magenta";
-     var bsixths = document.getElementById("b1").style.backgroundColor="magenta";
+     var bsixths = document.getElementById("b1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
+          var bfirst = document.getElementById("b6").style.backgroundColor="cyan";
+          var bsecond = document.getElementById("b5").style.backgroundColor="cyan";
+          var bthird = document.getElementById("b4").style.backgroundColor="cyan";
+          var bfourth = document.getElementById("b3").style.backgroundColor="cyan";
+          var bfith = document.getElementById("b2").style.backgroundColor="cyan";
+          var bsixth = document.getElementById("b1").style.backgroundColor="cyan";
           for(countercolumntwo=0;countercolumntwo<=6;countercolumntwo++){
                if(countercolumntwo==1){
                     var bfirst 
@@ -254,7 +221,13 @@ function bbutton(){
           }
      }
      else if(colorchecker == false){
-          for(countercolumnone=0;countercolumnone<=6;countercolumnone){
+          var bfirsts = document.getElementById("b6").style.backgroundColor="magenta";
+          var bseconds = document.getElementById("b5").style.backgroundColor="magenta";
+          var bthirds = document.getElementById("b4").style.backgroundColor="magenta";
+          var bfourths = document.getElementById("b3").style.backgroundColor="magenta";
+          var bfiths = document.getElementById("b2").style.backgroundColor="magenta";
+          var bsixths = document.getElementById("b1").style.backgroundColor="magenta";
+          for(countercolumnone=0;countercolumnone<=6;countercolumnone++){
                if(countercolumnone==1){
                     var bfirsts
                }
@@ -293,7 +266,7 @@ function bbutton(){
 
 
 function cbutton(){
-     var cfirst = document.getElementById("c6").style.backgroundColor="cyan";
+   /*  var cfirst = document.getElementById("c6").style.backgroundColor="cyan";
      var csecond = document.getElementById("c5").style.backgroundColor="cyan";
      var cthird = document.getElementById("c4").style.backgroundColor="cyan";
      var cfourth = document.getElementById("c3").style.backgroundColor="cyan";
@@ -305,8 +278,15 @@ function cbutton(){
      var cthirds = document.getElementById("c4").style.backgroundColor="magenta";
      var cfourths = document.getElementById("c3").style.backgroundColor="magenta";
      var cfiths = document.getElementById("c2").style.backgroundColor="magenta";
-     var csixths = document.getElementById("c1").style.backgroundColor="magenta";
+     var csixths = document.getElementById("c1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
+          var cfirst = document.getElementById("c6").style.backgroundColor="cyan";
+          var csecond = document.getElementById("c5").style.backgroundColor="cyan";
+          var cthird = document.getElementById("c4").style.backgroundColor="cyan";
+          var cfourth = document.getElementById("c3").style.backgroundColor="cyan";
+          var cfith = document.getElementById("c2").style.backgroundColor="cyan";
+          var csixth = document.getElementById("c1").style.backgroundColor="cyan";
+     
           for(countercolumnthree=0;countercolumnthree<=6;countercolumnthree++){
                if(countercolumnthree==1){
                     var cfirst 
@@ -332,7 +312,13 @@ function cbutton(){
           }
      }
      else if(colorchecker == false){
-          for(countercolumnthree=0;countercolumnthree<=6;countercolumnthree){
+          var cfirsts = document.getElementById("c6").style.backgroundColor="magenta";
+          var cseconds = document.getElementById("c5").style.backgroundColor="magenta";
+          var cthirds = document.getElementById("c4").style.backgroundColor="magenta";
+          var cfourths = document.getElementById("c3").style.backgroundColor="magenta";
+          var cfiths = document.getElementById("c2").style.backgroundColor="magenta";
+          var csixths = document.getElementById("c1").style.backgroundColor="magenta";
+          for(countercolumnthree=0;countercolumnthree<=6;countercolumnthree++){
                if(countercolumnthree==1){
                     var cfirsts
                }
@@ -369,7 +355,7 @@ function cbutton(){
 
 
 function dbutton(){
-     var dfirst = document.getElementById("d6").style.backgroundColor="cyan";
+     /*var dfirst = document.getElementById("d6").style.backgroundColor="cyan";
      var dsecond = document.getElementById("d5").style.backgroundColor="cyan";
      var dthird = document.getElementById("d4").style.backgroundColor="cyan";
      var dfourth = document.getElementById("d3").style.backgroundColor="cyan";
@@ -381,8 +367,14 @@ function dbutton(){
      var dthirds = document.getElementById("d4").style.backgroundColor="magenta";
      var dfourths = document.getElementById("d3").style.backgroundColor="magenta";
      var dfiths = document.getElementById("d2").style.backgroundColor="magenta";
-     var dsixths = document.getElementById("d1").style.backgroundColor="magenta";
+     var dsixths = document.getElementById("d1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
+          var dfirst = document.getElementById("d6").style.backgroundColor="cyan";
+          var dsecond = document.getElementById("d5").style.backgroundColor="cyan";
+          var dthird = document.getElementById("d4").style.backgroundColor="cyan";
+          var dfourth = document.getElementById("d3").style.backgroundColor="cyan";
+          var dfith = document.getElementById("d2").style.backgroundColor="cyan";
+          var dsixth = document.getElementById("d1").style.backgroundColor="cyan";
           for(countercolumnfour=0;countercolumnfour<=6;countercolumnfour++){
                if(countercolumnfour==1){
                     var dfirst 
@@ -408,7 +400,13 @@ function dbutton(){
           }
      }
      else if(colorchecker == false){
-          for(countercolumnfour=0;countercolumnfour<=6;countercolumnfour){
+          var dfirsts = document.getElementById("d6").style.backgroundColor="magenta";
+          var dseconds = document.getElementById("d5").style.backgroundColor="magenta";
+          var dthirds = document.getElementById("d4").style.backgroundColor="magenta";
+          var dfourths = document.getElementById("d3").style.backgroundColor="magenta";
+          var dfiths = document.getElementById("d2").style.backgroundColor="magenta";
+          var dsixths = document.getElementById("d1").style.backgroundColor="magenta";
+          for(countercolumnfour=0;countercolumnfour<=6;countercolumnfour++){
                if(countercolumnfour==1){
                     var dfirsts
                }
@@ -451,7 +449,7 @@ function dbutton(){
 
 
 function ebutton(){
-     var efirst = document.getElementById("e6").style.backgroundColor="cyan";
+    /* var efirst = document.getElementById("e6").style.backgroundColor="cyan";
      var esecond = document.getElementById("e5").style.backgroundColor="cyan";
      var ethird = document.getElementById("e4").style.backgroundColor="cyan";
      var efourth = document.getElementById("e3").style.backgroundColor="cyan";
@@ -463,8 +461,15 @@ function ebutton(){
      var ethird = document.getElementById("e4").style.backgroundColor="magenta";
      var efourth = document.getElementById("e3").style.backgroundColor="magenta";
      var efith = document.getElementById("e2").style.backgroundColor="magneta";
-     var esixth = document.getElementById("e1").style.backgroundColor="magenta";
+     var esixth = document.getElementById("e1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
+          var efirst = document.getElementById("e6").style.backgroundColor="cyan";
+          var esecond = document.getElementById("e5").style.backgroundColor="cyan";
+          var ethird = document.getElementById("e4").style.backgroundColor="cyan";
+          var efourth = document.getElementById("e3").style.backgroundColor="cyan";
+          var efith = document.getElementById("e2").style.backgroundColor="cyan";
+          var esixth = document.getElementById("e1").style.backgroundColor="cyan";
+     
           for(countercolumfive=0;countercolumfive<=6;countercolumfive++){
                if(countercolumfive==1){
                     var efirst 
@@ -490,7 +495,13 @@ function ebutton(){
           }
      }
      else if(colorchecker == false){
-          for(countercolumfive=0;countercolumfive<=6;countercolumfive){
+          var efirst = document.getElementById("e6").style.backgroundColor="magenta";
+          var esecond = document.getElementById("e5").style.backgroundColor="magenta";
+          var ethird = document.getElementById("e4").style.backgroundColor="magenta";
+          var efourth = document.getElementById("e3").style.backgroundColor="magenta";
+          var efith = document.getElementById("e2").style.backgroundColor="magneta";
+          var esixth = document.getElementById("e1").style.backgroundColor="magenta";
+          for(countercolumfive=0;countercolumfive<=6;countercolumfive++){
                if(countercolumnone==1){
                     var efirsts
                }
@@ -530,7 +541,7 @@ function ebutton(){
 
 
 function fbutton(){
-     var ffirst = document.getElementById("f6").style.backgroundColor="cyan";
+     /*var ffirst = document.getElementById("f6").style.backgroundColor="cyan";
      var fsecond = document.getElementById("f5").style.backgroundColor="cyan";
      var fthird = document.getElementById("f4").style.backgroundColor="cyan";
      var ffourth = document.getElementById("f3").style.backgroundColor="cyan";
@@ -542,8 +553,14 @@ function fbutton(){
      var fthirds = document.getElementById("f4").style.backgroundColor="magenta";
      var ffourths = document.getElementById("f3").style.backgroundColor="magenta";
      var ffiths = document.getElementById("f2").style.backgroundColor="magenta";
-     var fsixths = document.getElementById("f1").style.backgroundColor="magenta";
+     var fsixths = document.getElementById("f1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
+          var ffirst = document.getElementById("f6").style.backgroundColor="cyan";
+          var fsecond = document.getElementById("f5").style.backgroundColor="cyan";
+          var fthird = document.getElementById("f4").style.backgroundColor="cyan";
+          var ffourth = document.getElementById("f3").style.backgroundColor="cyan";
+          var ffith = document.getElementById("f2").style.backgroundColor="cyan";
+          var fsixth = document.getElementById("f1").style.backgroundColor="cyan";
           for(countercolumnsix=0;countercolumnsix<=6;countercolumnsix++){
                if(countercolumnsix==1){
                     var ffirst 
@@ -569,7 +586,13 @@ function fbutton(){
           }
      }
      else if(colorchecker == false){
-          for(countercolumnsix=0;countercolumnsix<=6;countercolumnsix){
+          var ffirsts = document.getElementById("f6").style.backgroundColor="magenta";
+          var fseconds = document.getElementById("f5").style.backgroundColor="magenta";
+          var fthirds = document.getElementById("f4").style.backgroundColor="magenta";
+          var ffourths = document.getElementById("f3").style.backgroundColor="magenta";
+          var ffiths = document.getElementById("f2").style.backgroundColor="magenta";
+          var fsixths = document.getElementById("f1").style.backgroundColor="magenta";
+          for(countercolumnsix=0;countercolumnsix<=6;countercolumnsix++){
                if(countercolumnsix==1){
                     var ffirsts
                }
@@ -607,7 +630,7 @@ function fbutton(){
 
 
 function gbutton(){
-     var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
+     /*var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
      var gsecond = document.getElementById("g5").style.backgroundColor="cyan";
      var gthird = document.getElementById("g4").style.backgroundColor="cyan";
      var gfourth = document.getElementById("g3").style.backgroundColor="cyan";
@@ -619,8 +642,14 @@ function gbutton(){
      var fthird = document.getElementById("g4").style.backgroundColor="magenta";
      var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
      var ffith = document.getElementById("g2").style.backgroundColor="magenta";
-     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";
+     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
+          var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
+          var gsecond = document.getElementById("g5").style.backgroundColor="cyan";
+          var gthird = document.getElementById("g4").style.backgroundColor="cyan";
+          var gfourth = document.getElementById("g3").style.backgroundColor="cyan";
+          var gfith = document.getElementById("g2").style.backgroundColor="cyan";
+          var gsixth = document.getElementById("g1").style.backgroundColor="cyan";
           for(countercolumnseven=0;countercolumnseven<=6;countercolumnseven++){
                if(countercolumnseven==1){
                     var gfirst 
@@ -646,7 +675,14 @@ function gbutton(){
           }
      }
      else if(colorchecker == false){
-          for(countercolumnseven=0;countercolumnseven<=6;countercolumnseven){
+               
+     var ffirst = document.getElementById("g6").style.backgroundColor="magenta";
+     var fsecond = document.getElementById("g5").style.backgroundColor="magenta";
+     var fthird = document.getElementById("g4").style.backgroundColor="magenta";
+     var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
+     var ffith = document.getElementById("g2").style.backgroundColor="magenta";
+     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";
+          for(countercolumnseven=0;countercolumnseven<=6;countercolumnseven++){
                if(countercolumnseven==1){
                     var gfirsts
                }
