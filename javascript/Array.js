@@ -266,7 +266,7 @@ function bbutton(){
           
           
        
-          for(countercolumnone=0;countercolumnone<=6;countercolumnone++){
+          
                if(countercolumntwo==1){
                     var bfirsts = document.getElementById("b6").style.backgroundColor="magenta";
                     console.log(countercolumnone)
@@ -300,7 +300,7 @@ function bbutton(){
                else if(countercolumntwo>=7){
                     alert("column 2 full ")
                }
-          }
+          
      }
        
      countercolumntwo+=1
@@ -340,7 +340,7 @@ function cbutton(){
           
           
      
-          for(countercolumnthree=0;countercolumnthree<=6;countercolumnthree++){
+          
                if(countercolumnthree==1){
                     var cfirst = document.getElementById("c6").style.backgroundColor="cyan";
                     console.log(countercolumnthree)
@@ -374,7 +374,7 @@ function cbutton(){
                else if(countercolumnthree>=7){
                     alert("column 3 is full")
                }
-          }
+          
      }
      else if(colorchecker == false){
           
@@ -419,6 +419,8 @@ function cbutton(){
                }
           //}
      }
+     countercolumnthree+=1
+
 }
 
 
@@ -446,68 +448,94 @@ function dbutton(){
      var dfiths = document.getElementById("d2").style.backgroundColor="magenta";
      var dsixths = document.getElementById("d1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
-          var dfirst = document.getElementById("d6").style.backgroundColor="cyan";
-          var dsecond = document.getElementById("d5").style.backgroundColor="cyan";
-          var dthird = document.getElementById("d4").style.backgroundColor="cyan";
-          var dfourth = document.getElementById("d3").style.backgroundColor="cyan";
-          var dfith = document.getElementById("d2").style.backgroundColor="cyan";
-          var dsixth = document.getElementById("d1").style.backgroundColor="cyan";
-          for(countercolumnfour=0;countercolumnfour<=6;countercolumnfour++){
+   
+          
+          
+          
                if(countercolumnfour==1){
-                    var dfirst 
+                    var dfirst = document.getElementById("d6").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
                }
                else if(countercolumnfour==2){
-                    var dsecond
+                    var dsecond = document.getElementById("d5").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnfour==3){
-                    var dthird
+                    var dthird = document.getElementById("d4").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
                }
                else if(countercolumnfour==4){
-                    var dfourth
+                    var dfourth = document.getElementById("d3").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnfour==5){
-                    var dfith
+                    var dfith = document.getElementById("d2").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
                }
                else if(countercolumnfour==6){
-                    var dsixth
+                    var dsixth = document.getElementById("d1").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnfour>=7){
                     alert("column 4 is full")
                }
-          }
+          
      }
      else if(colorchecker == false){
-          var dfirsts = document.getElementById("d6").style.backgroundColor="magenta";
-          var dseconds = document.getElementById("d5").style.backgroundColor="magenta";
-          var dthirds = document.getElementById("d4").style.backgroundColor="magenta";
-          var dfourths = document.getElementById("d3").style.backgroundColor="magenta";
-          var dfiths = document.getElementById("d2").style.backgroundColor="magenta";
-          var dsixths = document.getElementById("d1").style.backgroundColor="magenta";
-          for(countercolumnfour=0;countercolumnfour<=6;countercolumnfour++){
+          
                if(countercolumnfour==1){
-                    var dfirsts
+                    var dfirsts = document.getElementById("d6").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnfour==2){
-                    var dseconds
+                    var dseconds = document.getElementById("d5").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnfour==3){
-                    var dthirds
+                    var dthirds = document.getElementById("d4").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnfour==4){
-                    var dfourths
+                    var dfourths = document.getElementById("d3").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnfour==5){
-                    var dfiths
+                    var dfiths = document.getElementById("d2").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnfour==6){
-                    var dsixths
+                    var dsixths = document.getElementById("d1").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnfour>=7){
                     //the following is just to check if row one has been filled
                     alert("column 4 full ")
                }
-          }
+          
      }
+     countercolumnfour+=1
+
 }
 
 
@@ -540,69 +568,95 @@ function ebutton(){
      var efith = document.getElementById("e2").style.backgroundColor="magneta";
      var esixth = document.getElementById("e1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
-          var efirst = document.getElementById("e6").style.backgroundColor="cyan";
-          var esecond = document.getElementById("e5").style.backgroundColor="cyan";
-          var ethird = document.getElementById("e4").style.backgroundColor="cyan";
-          var efourth = document.getElementById("e3").style.backgroundColor="cyan";
-          var efith = document.getElementById("e2").style.backgroundColor="cyan";
-          var esixth = document.getElementById("e1").style.backgroundColor="cyan";
      
-          for(countercolumfive=0;countercolumfive<=6;countercolumfive++){
-               if(countercolumfive==1){
-                    var efirst 
+          
+               if(countercolumnfive==1){
+                     var efirst = document.getElementById("e6").style.backgroundColor="cyan";
+                     console.log(countercolumnfour)
+                     colorchecker=false
+
                }
-               else if(countercolumfive==2){
-                    var esecond
+               else if(countercolumnfive==2){
+                     var esecond = document.getElementById("e5").style.backgroundColor="cyan";
+                     console.log(countercolumnfour)
+                     colorchecker=false
+
                }
-               else if(countercolumfive==3){
-                    var ethird
+               else if(countercolumnfive==3){
+                     var ethird = document.getElementById("e4").style.backgroundColor="cyan";
+                     console.log(countercolumnfour)
+                     colorchecker=false
+
                }
-               else if(countercolumfive==4){
-                    var efourth
+               else if(countercolumnfive==4){
+                    var efourth = document.getElementById("e3").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
-               else if(countercolumfive==5){
-                    var efith
+               else if(countercolumnfive==5){
+                    var efith = document.getElementById("e2").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
-               else if(countercolumfive==6){
-                    var esixth
+               else if(countercolumnfive==6){
+                    var esixth = document.getElementById("e1").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
-               else if(countercolumfive>=7){
+               else if(countercolumnfive>=7){
                     alert("column 5 is full")
                }
-          }
+          
      }
      else if(colorchecker == false){
-          var efirst = document.getElementById("e6").style.backgroundColor="magenta";
-          var esecond = document.getElementById("e5").style.backgroundColor="magenta";
-          var ethird = document.getElementById("e4").style.backgroundColor="magenta";
-          var efourth = document.getElementById("e3").style.backgroundColor="magenta";
-          var efith = document.getElementById("e2").style.backgroundColor="magneta";
-          var esixth = document.getElementById("e1").style.backgroundColor="magenta";
-          for(countercolumfive=0;countercolumfive<=6;countercolumfive++){
-               if(countercolumnone==1){
-                    var efirsts
+          
+          
+     
+               if(countercolumnfive==1){
+                    var efirst = document.getElementById("e6").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
-               else if(countercolumfive==2){
-                    var eseconds
+               else if(countercolumnfive==2){
+                    var esecond = document.getElementById("e5").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
-               else if(countercolumfive==3){
-                    var ethirds
+               else if(countercolumnfive==3){
+                    var ethird = document.getElementById("e4").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
                }
-               else if(countercolumfive==4){
-                    var efourths
+               else if(countercolumnfive==4){
+                    var efourth = document.getElementById("e3").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
                }
-               else if(countercolumfive==5){
-                    var efiths
+               else if(countercolumnfive==5){
+                    var efith = document.getElementById("e2").style.backgroundColor="magneta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
-               else if(countercolumfive==6){
-                    var esixths
+               else if(countercolumnfive==6){
+                    var esixth = document.getElementById("e1").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
-               else if(countercolumntwo>=7){
+               else if(countercolumnfive>=7){
                     //the following is just to check if row one has been filled
                     alert("column 5 full ")
                }
-          }
+          
      }
+     countercolumnfive+=1
+
 }
 
 
@@ -632,68 +686,92 @@ function fbutton(){
      var ffiths = document.getElementById("f2").style.backgroundColor="magenta";
      var fsixths = document.getElementById("f1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
-          var ffirst = document.getElementById("f6").style.backgroundColor="cyan";
-          var fsecond = document.getElementById("f5").style.backgroundColor="cyan";
-          var fthird = document.getElementById("f4").style.backgroundColor="cyan";
-          var ffourth = document.getElementById("f3").style.backgroundColor="cyan";
-          var ffith = document.getElementById("f2").style.backgroundColor="cyan";
-          var fsixth = document.getElementById("f1").style.backgroundColor="cyan";
-          for(countercolumnsix=0;countercolumnsix<=6;countercolumnsix++){
                if(countercolumnsix==1){
-                    var ffirst 
+                    var ffirst = document.getElementById("f6").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnsix==2){
-                    var fsecond
+                    var fsecond = document.getElementById("f5").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnsix==3){
-                    var fthird
+                    var fthird = document.getElementById("f4").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnsix==4){
-                    var ffourth
+                    var ffourth = document.getElementById("f3").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnsix==5){
-                    var ffith
+                    var ffith = document.getElementById("f2").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnsix==6){
-                    var fsixth
+                    var fsixth = document.getElementById("f1").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnsix>=7){
                     alert("column 6 is full")
                }
-          }
+          
      }
      else if(colorchecker == false){
-          var ffirsts = document.getElementById("f6").style.backgroundColor="magenta";
-          var fseconds = document.getElementById("f5").style.backgroundColor="magenta";
-          var fthirds = document.getElementById("f4").style.backgroundColor="magenta";
-          var ffourths = document.getElementById("f3").style.backgroundColor="magenta";
-          var ffiths = document.getElementById("f2").style.backgroundColor="magenta";
-          var fsixths = document.getElementById("f1").style.backgroundColor="magenta";
-          for(countercolumnsix=0;countercolumnsix<=6;countercolumnsix++){
                if(countercolumnsix==1){
-                    var ffirsts
+                    var ffirsts = document.getElementById("f6").style.backgroundColor="magenta";
+                    console.log(countercolumnsix)
+                    colorchecker=true
+
                }
                else if(countercolumnsix==2){
-                    var fseconds
+                    var fseconds = document.getElementById("f5").style.backgroundColor="magenta";
+                    console.log(countercolumnsix)
+                    colorchecker=true
+
                }
                else if(countercolumnsix==3){
-                    var fthirds
+                    var fthirds = document.getElementById("f4").style.backgroundColor="magenta";
+                    console.log(countercolumnsix)
+                    colorchecker=true
+
                }
                else if(countercolumnsix==4){
-                    var ffourths
+                    var ffourths = document.getElementById("f3").style.backgroundColor="magenta";
+                    console.log(countercolumnsix)
+                    colorchecker=true
+
                }
                else if(countercolumnsix==5){
-                    var ffiths
+                    var ffiths = document.getElementById("f2").style.backgroundColor="magenta";
+                    console.log(countercolumnsix)
+                    colorchecker=true
+
                }
                else if(countercolumnsix==6){
-                    var fsixths
+                    var fsixths = document.getElementById("f1").style.backgroundColor="magenta";
+                    console.log(countercolumnsix)
+                    colorchecker=true
+
                }
                else if(countercolumnsix>=7){
                     //the following is just to check if row one has been filled
                     alert("column 6 full ")
                }
-          }
+          
      }
+     countercolumnsix+=1
+
 }
 
 
@@ -721,69 +799,93 @@ function gbutton(){
      var ffith = document.getElementById("g2").style.backgroundColor="magenta";
      var fsixth = document.getElementById("g1").style.backgroundColor="magenta";*/
      if(colorchecker == true){
-          var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
-          var gsecond = document.getElementById("g5").style.backgroundColor="cyan";
-          var gthird = document.getElementById("g4").style.backgroundColor="cyan";
-          var gfourth = document.getElementById("g3").style.backgroundColor="cyan";
-          var gfith = document.getElementById("g2").style.backgroundColor="cyan";
-          var gsixth = document.getElementById("g1").style.backgroundColor="cyan";
-          for(countercolumnseven=0;countercolumnseven<=6;countercolumnseven++){
                if(countercolumnseven==1){
-                    var gfirst 
+                    var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnseven==2){
-                    var gsecond
+                    var gsecond = document.getElementById("g5").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnseven==3){
-                    var gthird
+                    var gthird = document.getElementById("g4").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnseven==4){
-                    var gfourth
+                    var gfourth = document.getElementById("g3").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnseven==5){
-                    var gfith
+                    var gfith = document.getElementById("g2").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnseven==6){
-                    var gsixth
+                    var gsixth = document.getElementById("g1").style.backgroundColor="cyan";
+                    console.log(countercolumnfour)
+                    colorchecker=false
+
                }
                else if(countercolumnseven>=7){
-                    alert("column 2 is full")
+                    alert("column 7 is full")
                }
-          }
+          
      }
      else if(colorchecker == false){
                
-     var ffirst = document.getElementById("g6").style.backgroundColor="magenta";
-     var fsecond = document.getElementById("g5").style.backgroundColor="magenta";
-     var fthird = document.getElementById("g4").style.backgroundColor="magenta";
-     var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
-     var ffith = document.getElementById("g2").style.backgroundColor="magenta";
-     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";
-          for(countercolumnseven=0;countercolumnseven<=6;countercolumnseven++){
                if(countercolumnseven==1){
-                    var gfirsts
+                    var ffirst = document.getElementById("g6").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnseven==2){
-                    var gseconds
+                    var fsecond = document.getElementById("g5").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnseven==3){
-                    var gthirds
+                    var fthird = document.getElementById("g4").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnseven==4){
-                    var gfourths
+                    var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnseven==5){
-                    var gfiths
+                    var ffith = document.getElementById("g2").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnseven==6){
-                    var gsixths
+                    var fsixth = document.getElementById("g1").style.backgroundColor="magenta";
+                    console.log(countercolumnfour)
+                    colorchecker=true
+
                }
                else if(countercolumnseven>=7){
                     //the following is just to check if row one has been filled
-                    alert("column 2 full ")
+                    alert("column 7 full ")
                }
-          }
+          
      }
+     countercolumnseven  +=1
+
 }
 
 
