@@ -638,7 +638,7 @@ function ebutton(){
                     colorchecker=true
                }
                else if(countercolumnfive==5){
-                    var efith = document.getElementById("e2").style.backgroundColor="magneta";
+                    var efith = document.getElementById("e2").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
                     colorchecker=true
 
