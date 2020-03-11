@@ -1,24 +1,8 @@
-var colorchecker=undefined//color checker will check what turn it is
-var clickposition = undefined;//clickposition identifies where the puck should be placed
-//cheatchecker checks if a space has already been chose and alert the person who chose it
+var gamearray=[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0];
 
-function startbutton(){
-    colorchecker=true;
-}
 
-function playerbox(){
-if(colorchecker=true){
-    document.body.getElementById("playerindicator").innerHTML="Player: Cyan";
-    console.log("Player:Cyan")
-}
-}
-function mousepositionreset(){
-    clickposition=undefined;
-    console.log("variable called clickposition reset");
-}
+var anynum = 0 || 2;
 
-function cheatchecker(){
-    if(){
-        alert("Invalid Placement, Please try again");
-    }
+if(gamearray=[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[anynum,anynum,anynum,anynum,anynum,anynum,anynum],[anynum,anynum,anynum,anynum,anynum,anynum,anynum]||[anynum,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[anynum,anynum,anynum,anynum,anynum,anynum,anynum]||anynum,anynum,anynum,anynum,anynum,anynum,anynum],[anynum,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum],[1,anynum,anynum,anynum,anynum,anynum,anynum]){
+    alert("cyan wins")
 }
