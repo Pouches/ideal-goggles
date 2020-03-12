@@ -6,36 +6,14 @@ var colorchecker = true;
      var countercolumnfive = 0 ;
      var countercolumnsix = 0 ;
      var countercolumnseven = 0 ;
-var tie = 0 
 var currentID
 //A
- 
-
-
-     
 //B
-
-
-
 //C
-
-
 //D
-
-
-
 //E
-
-
-
 //f
-
-
-
-
 //g
-
-     
    /*  var ffirst = document.getElementById("g6").style.backgroundColor="magenta";
      var fsecond = document.getElementById("g5").style.backgroundColor="magenta";
      var fthird = document.getElementById("g4").style.backgroundColor="magenta";
@@ -57,9 +35,7 @@ var currentID
  function setvalue(x){
                 if(check==true){ 
                      document.getElementById("caldis").innerHTML+=x;
-                      num1=  document.getElementById("caldis").innerHTML;
-
-        
+                      num1=  document.getElementById("caldis").innerHTML;        
 */
 /*var verticalrow2=[x]{}
 var verticalrow3=[x]{}
@@ -69,7 +45,7 @@ var verticalrow6=[x]{}
 var verticalrow7=[x]{}*/
 
 
-//this just states who's turn it is !(not working)!
+//this just states who's turn it is 
 if(colorchecker==true){
    //  document.getElementById("turn").innerHTML=("Cyan's turn");
 }
@@ -897,13 +873,14 @@ function gbutton(){
 
 
 //this is to check if all the tiles have been filled with no winner
-if(countercolumnone>=6){tie+1};
-if(countercolumntwo>=6){tie+1};
-if(countercolumnthree>=6){tie+1};
-if(countercolumnfour>=6){tie+1};
-if(countercolumnfive>=6){tie+1};
-if(countercolumnsix>=6){tie+1};
-if(countercolumnseven>=6){tie+1};
+var tie=0
+if(countercolumnone>=6){tie+=1};
+if(countercolumntwo>=6){tie+=1};
+if(countercolumnthree>=6){tie+=1};
+if(countercolumnfour>=6){tie+=1};
+if(countercolumnfive>=6){tie+=1};
+if(countercolumnsix>=6){tie+=1};
+if(countercolumnseven>=6){tie+=1};
 
 if(tie==7){
      alert("I'm not sure how you managed this, but this match is a tie.")
