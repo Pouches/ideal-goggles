@@ -661,7 +661,7 @@ function ebutton(){
 
                }
                else if(countercolumnfive==5){
-                    var efith = document.getElementById("e2").style.backgroundColor="magneta";
+                    var efith = document.getElementById("e2").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
                     colorchecker=true;
                     gamearray[][]=;
@@ -853,37 +853,43 @@ function gbutton(){
                if(countercolumnseven==1){
                     var gfirst = document.getElementById("g6").style.backgroundColor="cyan";
                     console.log(countercolumnfour)
-                    colorchecker=false
+                    colorchecker=false;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==2){
                     var gsecond = document.getElementById("g5").style.backgroundColor="cyan";
                     console.log(countercolumnfour)
-                    colorchecker=false
+                    colorchecker=false;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==3){
                     var gthird = document.getElementById("g4").style.backgroundColor="cyan";
                     console.log(countercolumnfour)
-                    colorchecker=false
+                    colorchecker=false;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==4){
                     var gfourth = document.getElementById("g3").style.backgroundColor="cyan";
                     console.log(countercolumnfour)
-                    colorchecker=false
+                    colorchecker=false;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==5){
                     var gfith = document.getElementById("g2").style.backgroundColor="cyan";
                     console.log(countercolumnfour)
-                    colorchecker=false
+                    colorchecker=false;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==6){
                     var gsixth = document.getElementById("g1").style.backgroundColor="cyan";
                     console.log(countercolumnfour)
-                    colorchecker=false
+                    colorchecker=false;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven>=7){
@@ -896,37 +902,43 @@ function gbutton(){
                if(countercolumnseven==1){
                     var ffirst = document.getElementById("g6").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
-                    colorchecker=true
+                    colorchecker=true;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==2){
                     var fsecond = document.getElementById("g5").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
-                    colorchecker=true
+                    colorchecker=true;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==3){
                     var fthird = document.getElementById("g4").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
-                    colorchecker=true
+                    colorchecker=true;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==4){
                     var ffourth = document.getElementById("g3").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
-                    colorchecker=true
+                    colorchecker=true;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==5){
                     var ffith = document.getElementById("g2").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
-                    colorchecker=true
+                    colorchecker=true;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven==6){
                     var fsixth = document.getElementById("g1").style.backgroundColor="magenta";
                     console.log(countercolumnfour)
-                    colorchecker=true
+                    colorchecker=true;
+                    gamearray[][]=;
 
                }
                else if(countercolumnseven>=7){
